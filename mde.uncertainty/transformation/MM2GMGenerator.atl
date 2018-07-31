@@ -1,0 +1,241 @@
+-- @path Ecore=/Family2GM/Esempio/Ecore.ecore
+-- @path MM=/Family2GM/Esempio/Ecore.ecore
+
+module MM2GMGenerator;
+create OUT : MM from IN : Ecore;
+helper def : currentRule : String = '';--
+helper context String def : metamodelName : String = self.substring(self.lastIndexOf('/')+2, self.lastIndexOf('.ecore'));--
+helper def : arrayAllSuperReference (t : Ecore!EClass): Sequence(Ecore!EReference) = 
+	t.eSuperTypes->iterate(er; result : Sequence(Ecore!EReference) = Sequence{} |
+		result->union(er.eReferences)->union(thisModule.arrayAllSuperReference(er))
+	);
+
+helper def : arrayAllSuperAttribute (t : Ecore!EClass): Sequence(Ecore!EAttribute) =
+	t.eSuperTypes->iterate(er; result : Sequence(Ecore!EReference) = Sequence{} |
+		result->union(er.eAttributes)->union(thisModule.arrayAllSuperAttribute(er))
+	);--helper def : doRuleString : String = '\n';
+helper def : nomeModello : String = '';--
+helper def : headerStringInit : String = 'module transformationTrace;\ncreate sintaxIndipendent : GM, wmtrace : TRACE from IN : ';
+helper def : headerString (): String = thisModule.headerStringInit + thisModule.nomeModello + ';
+helper def : conta : Integer = 0;\nhelper def : GetOutModelPath (path : String) : String = 
+	path.substring(1,path.lastIndexOf(\'.xmi\')) + \'SI.xmi\';
+helper def : counter : Integer = 1;
+helper def : contaReference : Integer = 1;
+';
+helper def : GetOutModelPath (path : String) : String= path.substring(1,path.lastIndexOf('/'));
+helper def : wholeProgramString : String = '';
+helper def : getPathTransormation (): String = thisModule.GetOutModelPath(Ecore!EClass.allInstances().first().oclType().generateModelRef('IN'));
+helper def : endpointString : String = 'endpoint rule RestructuringModels()
+{
+	to
+		s : GM!Model
+		(
+			objects <- GM!Object.allInstances()
+		),
+		modelIn : TRACE!ModelRef
+		(
+			name <- \'InModel\',
+			ownedElementRef <- TRACE!ElementRef.allInstances()->select(e|e.name.startsWith(\'IN\')),
+			description <- \'Output model\',
+			ref <- TRACE!ElementRef.allInstances()->select(e|e.name.startsWith(\'IN\')).first().oclType().generateModelRef(\'IN\')
+		),
+		modelOut : TRACE!ModelRef
+		(
+			name <- \'OutModel\',
+			ownedElementRef <- TRACE!ElementRef.allInstances()->select(e|e.name.startsWith(\'OUT\')),
+			description <- \'Input model\',
+			ref <- thisModule.GetOutModelPath(TRACE!ElementRef.allInstances()->select(e|e.name.startsWith(\'IN\')).first().oclType().generateModelRef(\'IN\'))
+			--\'/Family2GM/Esempio/generateModel.xmi\'--TRACE!ElementRef.allInstances()->select(e|e.name.startsWith(\'OUT\')).first().oclType().generateModelRef(\'OUT\')
+		),
+		s1 : TRACE!Model
+		(
+			ownedElement <- TRACE!Link.allInstances(),
+			name <- \'wmtrace\',
+			description <- \'wmtrace for round-tripping\',
+			leftModel <- modelIn,
+			rightModel <- modelOut
+		)
+}
+rule TraceElement (s:OclAny, t1:OclAny){
+	to
+		source : TRACE!LinkEnd
+		(
+			name <- s.eClass().name,
+			element <- sourceElementRef,
+			description <- \'Link end input\',
+			link <- traceL
+		),
+		trace1: TRACE!LinkEnd
+		(
+			name <- t1.eClass().name,
+			element <- targetElementRef,
+			description <- \'Link end output\',
+			link <- traceL	
+		),
+		sourceElementRef : TRACE!ElementRef
+		(
+			name <- \'IN\' + s.eClass().name,
+			description <- \'model element input\',
+			ref <- s.__xmiID__
+		),
+		targetElementRef : TRACE!ElementRef
+		(
+			name <- \'OUT\'+ t1.eClass().name,--
+			description <- \'model element output\',
+			ref <- if t1.eClass().name = \'Object\' 
+					then \'//@objects.\' + thisModule.conta.toString()
+					else \'//@objects.\' + (thisModule.conta-1).toString() + \'/@features.\' + (thisModule.contaReference).toString()
+				   endif
+		),
+		traceL : TRACE!Link
+		(
+			name <- s.eClass().name + \' \' + t1.eClass().name,
+			left <- source,
+			description <- \'Link for round-trippig\',
+			right <- trace1
+		)
+		do{
+			if (t1.eClass().name = \'Object\')
+				thisModule.conta <- thisModule.conta + 1;
+			else thisModule.contaReference <- thisModule.contaReference + 1;
+		}\n}';
+endpoint rule generateCompleteATLCode()
+{
+	to t:MM!EClass 
+	do{
+		thisModule.wholeProgramString <- thisModule.headerString() + 
+			thisModule.currentRule + thisModule.endpointString;-- + thisModule.doRuleString;
+		thisModule.wholeProgramString.writeTo(thisModule.getPathTransormation() + '/' +  
+			thisModule.nomeModello + '2GM.atl');
+	}
+}
+rule GenerateRule{
+	from
+		s : Ecore!EClass (not s.abstract)
+	to
+		t : MM!EClass
+		(
+			--guard : s.upperBound=0,
+			name <- s.name
+		)
+	do{
+		thisModule.nomeModello <- s.generateModelRef('IN').metamodelName;
+		if(s.eAttributes.size()=0 and s.eReferences.size()=0){
+			thisModule.currentRule <- thisModule.currentRule + 'rule ' + s.name + '2Object {' +
+				'\n\tfrom\n\t\ts : ' + s.generateModelRef('IN').metamodelName + '!' + s.name +
+				'\n\tto\n\t\tt : GM!Object( name <- ' + s.name + ')';
+		}
+		else
+		{
+			thisModule.currentRule <- thisModule.currentRule + 'rule ' + s.name + '2Object {' +
+				'\n\tfrom\n\t\ts : ' + s.generateModelRef('IN').metamodelName + '!' + s.name + 
+				' (s.oclIsTypeOf(' + s.generateModelRef('IN').metamodelName + '!' + s.name + '))' +
+				'\n\tto\n\t\tt : GM!Object\n\t\t( \n\t\t\tname <- \'' + s.name + '\',\n\t\t\tfeatures <- Sequence{';
+			for(e in s.eAttributes)
+			{
+				thisModule.currentRule <- thisModule.currentRule + e.name + 'Att,';
+			}
+			for(e in s.eReferences)
+			{
+				thisModule.currentRule <- thisModule.currentRule + e.name + 'Ref,';
+			}
+			for(e in thisModule.arrayAllSuperAttribute(s))
+			{
+				thisModule.currentRule <- thisModule.currentRule + e.name + 'Att,';
+			}
+			for(e in thisModule.arrayAllSuperReference(s))
+			{
+				thisModule.currentRule <- thisModule.currentRule + e.name + 'Ref,';
+			}
+			thisModule.currentRule <- thisModule.currentRule.substring(1,thisModule.currentRule.size()-1);
+			thisModule.currentRule <- thisModule.currentRule + '}\n\t\t)';
+		}
+		for(e in s.eAttributes)
+		{
+			if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Att : GM!Attribute \n\t\t(\n\t\t\tvalue <- s.' + e.name + '.toString(),\n\t\t\tname <- \'' + 
+						e.name + '\'\n\t\t)';
+			else
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Att : distinct GM!Attribute foreach(e in s.' + e.name + 
+						' ) \n\t\t(\n\t\t\tvalue <- e.toString(),\n\t\t\tname <- \'' + e.name + '\'\n\t\t)';
+		}
+		for(e in thisModule.arrayAllSuperAttribute(s))
+		{
+			if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Att : GM!Attribute \n\t\t(\n\t\t\tvalue <- s.' + e.name + 
+						'.toString(),\n\t\t\tname <- \'' + e.name + '\'\n\t\t)';
+			else
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Att : distinct GM!Attribute foreach(e in s.' + e.name + 
+						' ) \n\t\t(\n\t\t\tvalue <- e.toString(),\n\t\t\tname <- \'' + e.name + 
+							'\'\n\t\t)';
+		}
+		
+		for(e in s.eReferences)
+		{
+			if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Ref : GM!Reference \n\t\t(\n\t\t\ttarget <- thisModule.resolveTemp(s.' + e.name + 
+						',\'t\'),\n\t\t\tname <- \'' + e.name + '\'\n\t\t)';
+			else
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Ref : distinct GM!Reference foreach(e in s.' + e.name + 
+						' ) \n\t\t(\n\t\t\ttarget <- thisModule.resolveTemp(e,\'t\'),\n\t\t\tname <- \'' + 
+							e.name + '\'\n\t\t)';
+		}
+		for(e in thisModule.arrayAllSuperReference(s))
+		{
+				if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Ref : GM!Reference \n\t\t(\n\t\t\ttarget <- thisModule.resolveTemp(s.' + 
+						e.name + ',\'t\'),\n\t\t\tname <- \'' + e.name + '\'\n\t\t)';
+			else
+				thisModule.currentRule <- thisModule.currentRule + ',\n\t\t' + e.name + 
+					'Ref : distinct GM!Reference foreach(e in s.' + e.name + 
+						' ) \n\t\t(\n\t\t\ttarget <- thisModule.resolveTemp(e,\'t\'),\n\t\t\tname <- \'' + 
+							e.name + '\'\n\t\t)';
+		}
+		--Sezione do
+		thisModule.currentRule <- thisModule.currentRule + '\n\tdo{\n\t\tthisModule.TraceElement(s,t);';
+		thisModule.currentRule <- thisModule.currentRule + '\n\t\tthisModule.contaReference <- ' +
+			(s.eAttributes.size() + thisModule.arrayAllSuperAttribute(s).size()).toString() + ';';
+		
+		
+				
+		for(e in s.eReferences)
+		{
+			if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + '\n\t\tif (s.' + e.name + 
+					' <> OclUndefined)\n\t\t\tthisModule.TraceElement(s.' + e.name + 
+						', ' + e.name + 'Ref);' ;
+			else
+				thisModule.currentRule <- thisModule.currentRule + '\n\t\tfor (e in s.' + e.name + 
+					')\n\t\t{\n\t\t\tthisModule.TraceElement(e,' + e.name + 
+						'Ref.at(thisModule.counter));\n\t\t\tthisModule.counter <- thisModule.counter + 1;\n\t\t}' +
+						'thisModule.counter <- 1;';		
+		}
+		for(e in thisModule.arrayAllSuperReference(s))
+		{
+				if(e.upperBound = 1)
+				thisModule.currentRule <- thisModule.currentRule + '\n\t\tif (s.' + e.name + 
+					' <> OclUndefined)\n\t\t\tthisModule.TraceElement(s.' + e.name + 
+						', ' + e.name + 'Ref);' ;
+			else
+				thisModule.currentRule <- thisModule.currentRule + '\n\t\tfor (e in s.' + e.name + 
+					')\n\t\t{\n\t\t\tthisModule.TraceElement(e,' + e.name + 
+						'Ref.at(thisModule.counter));\n\t\t\tthisModule.counter <- thisModule.counter + 1;\n\t\t}' +
+						'thisModule.counter <- 1;';
+		}
+		
+		
+		
+		thisModule.currentRule <- thisModule.currentRule + '\n\t\tthisModule.contaReference <- 1;\n\t}\n}\n';
+		--thisModule.doRuleString <- thisModule.doRuleString + '\n';
+		--thisModule.currentRule.writeTo('/Family2GM/loggami.txt');
+			
+	}
+}
+

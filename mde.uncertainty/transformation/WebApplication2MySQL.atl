@@ -1,0 +1,91 @@
+-- @path MySQL=/Homework2/metamodels/DBMM.ecore
+-- @path WebApplication=/Homework2/metamodels/WebApplication.ecore
+
+module WebApplication2MySQL;
+create OUT : MySQL from IN : WebApplication;
+
+
+helper context WebApplication!Relation def: chooseKey() : MySQL!Key =
+	MySQL!Key.allInstances() -> select (k | k.name = self.inRelationWith.name);
+	
+	
+rule MyWeb2Dummy {
+	from 
+		m: WebApplication!MyWeb
+	to 
+		d: MySQL!dummy (
+			containsSchema <- m.datasources
+		)
+}
+
+
+rule Datasource2Schema {
+	from 
+		d: WebApplication!Datasource
+	to 
+		s: MySQL!Schema (
+			name <- d.name,
+			table <- d.entities
+		)	
+}
+
+
+rule Entity2Table {
+	from 
+		e : WebApplication!Entity (not e.columns.isEmpty())
+	to   
+		t : MySQL!Table(
+			name <- e.name,
+			column <- e.columns,
+			schema <- e.refImmediateComposite(),
+			hasKey <- thisModule.a(e)
+		)		
+}
+
+
+lazy rule a {
+	from
+		e : WebApplication!Entity 
+	to 
+		k : MySQL!Key (
+			name <- e.name,
+			column <- e.columns->select(f | f.PK)
+		)
+}
+
+
+rule Entity2Tables {
+	
+	from
+		e : WebApplication!Entity (e.columns.isEmpty())
+	to 
+		t : MySQL!Table(
+			name <- e.name
+		)		
+}
+
+
+rule Column2Column {
+	from 
+		s: WebApplication!Column
+	to 
+		t: MySQL!Column (
+			name <- s.name,
+			type <- s.type.toString(),
+			owner <- s.refImmediateComposite()	
+		)
+}
+
+
+rule Relation2ForeignKey {
+	from
+  		r : WebApplication!Relation 
+ 	to 
+	   fk : MySQL!ForeignKey (
+		   schema <- r.refImmediateComposite().refImmediateComposite(),
+		   name <- r.name,
+		   owner <- r.refImmediateComposite(),
+		   column <- r.columns,
+	   	   refersTo <- r.chooseKey()
+  		)
+}

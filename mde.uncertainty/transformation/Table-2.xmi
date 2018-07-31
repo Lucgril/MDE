@@ -1,0 +1,3667 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Table:Table xmlns:Table="Table" name="UTable">
+  <rows name="Family.Flanders.5">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.daughters">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.familiesInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.father">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.mother">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.5.sons">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_6_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_6_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_6_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_6_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.daughters">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.familiesInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.father">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/father"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.mother">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Flanders.8.sons">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_2_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.daughters">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.familiesInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.father">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.mother">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.2.sons">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.daughters">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.familiesInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/familiesInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.father">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.mother">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/mother"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//Family/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="Family.Simpson.9.sons">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_4_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4.daughtersInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4.fatherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4.motherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Bart.4.sonsInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_3_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3.daughtersInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/daughtersInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3.fatherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3.motherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/motherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Marge.3.sonsInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_7_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7.daughtersInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7.fatherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7.motherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Rod.7.sonsInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_6_//"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6.daughtersInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6.fatherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/fatherInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6.motherInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains/>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6.name">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/name"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyMember.Todd.6.sonsInverse">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains/>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="platform:/plugin/Families/model/Families.ecore#//FamilyMember/sonsInverse"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyRegister">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_1_/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#/"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#/"/>
+      </contains>
+    </cells>
+  </rows>
+  <rows name="FamilyRegister.families">
+    <cells name="sampleFamily'13.xmi">
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_9_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'13.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'12.xmi">
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_9_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'12.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'10.xmi">
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'10.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'11.xmi">
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'11.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'15.xmi">
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_9_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'15.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'14.xmi">
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'14.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'16.xmi">
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_9_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'16.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'6.xmi">
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'6.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'7.xmi">
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'7.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'5.xmi">
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'5.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'4.xmi">
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'4.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'1.xmi">
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'1.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'3.xmi">
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'3.xmi#ASPid_9_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'2.xmi">
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'2.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'9.xmi">
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_5_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'9.xmi#ASPid_8_//"/>
+      </contains>
+    </cells>
+    <cells name="sampleFamily'8.xmi">
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_2_//"/>
+      </contains>
+      <contains>
+        <element href="../model/sampleFamily'8.xmi#ASPid_5_//"/>
+      </contains>
+    </cells>
+  </rows>
+</Table:Table>

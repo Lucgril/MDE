@@ -1,0 +1,306 @@
+-- @nsURI TABLE=Table
+-- @path UFAMILIES=/mde.uncertainty/metamodels/UFamiliesNew.ecore
+
+
+module Table2UFamilies;
+create OUT: UFAMILIES from IN: TABLE;
+
+---------------------------------------------------------------------------- HELPERS
+--- ----------------------------------------------------------------------------------
+
+-- Scorre le 'Cell' e verifica se è presente un elemento Undefined
+helper context TABLE!Row def: createUFamilies(): Boolean =
+	self.cells -> forAll(e | thisModule.parseCellElement(e.contains));
+
+-- Data una sequenza di 'Element', verifica se sono tutti diversi da OclUndefined
+helper def: parseCellElement(a: Sequence(TABLE!Element)): Boolean =
+	a -> forAll(e | e.Element <> OclUndefined);
+
+-- Restituisce tutti gli elementi tranne i rispettivi attributi o referenze
+-- Es. Es. Dato in inpu Family.Flanders.5, restituisce Family.Flanders.5 e non
+-- Family.Flanders.5.*
+helper context TABLE!Row def: rootElement(): Sequence(TABLE!Row) =
+	TABLE!Row.allInstances() -> select(i | i.name.substring(i.getPosition() + 1, i.
+			getPosition() + 1) = i.name.split('\\.').last());
+
+-- Restituisce la posizione dell'indice (es. 5)
+helper context TABLE!Row def: getPosition(): String =
+	self.name.indexOf(self.name.split('\\.').last());
+
+-- Restituisce tutti gli elementi del modello tranne quelli di tipo 'FamilyMemebr'
+helper def: filterList(list: Sequence(TABLE!Row)): Sequence(TABLE!Row) =
+	list -> iterate(x; newList: Sequence(TABLE!Row) = Sequence{} | if (x.name.split('\\.'
+			+ '.').first() = 'Family') then
+			newList.append(x)
+		else
+			newList
+		endif);
+
+-- Restituisce gli elementi rappresentanti gli attributi di un elemento, i cui nomi
+-- iniziano con il nome dell'elemento
+-- Es. Dato in inpu Family.Flanders.5, restituisce Family.Flanders.5.*
+helper def: getAttributes(name: String): Sequence(TABLE!Row) =
+	TABLE!Row.allInstances() -> select(r | r.name.startsWith(name));
+
+-- Esclude dalla selezione qualsiasi oggetto il cui nome finisce con '.familiesInverse' o
+-- '.name'
+helper def: parseString(s: Sequence(TABLE!Row)): Sequence(TABLE!Row) =
+	s -> select(str | not str.name.endsWith('.familiesInverse')and not str.name.
+			endsWith('.name'));
+
+-- Controlla se le size delle celle sono uguali
+helper def: checkSize(r: TABLE!Row): Boolean =
+	if (r.cells -> forAll(e | e.contains.size() = 1)) then
+		true
+	else
+		false
+	endif;
+
+-- Verifica se gli elementi delle 'Cell' di una 'Row' hanno lo stesso _xmiID_
+helper def: checkID(c: TABLE!Row): Boolean =
+	let id: String =
+		c.cells -> iterate(e; result: String = '' | result = (e.contains -> select(els |
+				els <> OclUndefined)).first().__xmiID__)
+	in
+		let resultBool: Boolean =
+			false
+		in
+			if (c.cells -> iterate(e; result: Boolean = false | e.contains -> forAll(els
+					| els.__xmiID__ = id))) then
+				true
+			else
+				false
+			endif;
+
+helper def: checkCells(r: TABLE!Row): Boolean =
+	r.cells -> forAll(cell | cell.contains.first().element.oclIsUndefined());
+
+helper def: checkCellsNot(r: TABLE!Row): Boolean =
+	r.cells -> forAll(cell | not cell.contains.first().element.oclIsUndefined());
+
+helper def: checkListElements(r: TABLE!Row): Boolean =
+	let lTmp: Sequence(TABLE!Element) =
+		thisModule.returnFirstListNotNull(r.cells)
+	in
+		r.cells -> forAll(listEl | thisModule.checkListsEquals(listEl.contains, lTmp));
+
+helper def: returnFirstListNotNull(c: Sequence(TABLE!Cell)): Sequence(TABLE!Element) =
+	c -> select(list | thisModule.checkListElementNull(list.contains)).first().contains;
+
+helper def: checkListElementNull(e: Sequence(TABLE!Element)): Boolean =
+	e -> forAll(el | el.element <> OclUndefined);
+
+helper def: checkListsEquals(l1: Sequence(TABLE!Element), l2: Sequence(TABLE!Element)):
+		Boolean =
+	l1 -> forAll(el1 | thisModule.checkElementWithIdInList(el1, l2)) and l2 -> forAll(el2
+			| thisModule.checkElementWithIdInList(el2, l1));
+
+helper def: checkElementWithIdInList(el: TABLE!Element, l2: Sequence(TABLE!Element)):
+		Boolean =
+	l2 -> exists(el2 | el.element.__xmiID__ = el2.element.__xmiID__);
+
+helper def: getObjectFromId(id: String): String =
+	TABLE!Row.allInstances() -> select(r | r.name.endsWith(thisModule.
+			getNumberFromId(id))).first().name;
+
+helper def: getNumberFromId(id: String): String =
+	id.split('_').at(2);
+		
+helper def: getUncertMembers(c: Sequence(TABLE!Cell)): Sequence(TABLE!Element) = 
+	
+	c -> iterate(cell; newList: Sequence(TABLE!Element) = Sequence{} | cell.contains -> select(el | if(
+		 (c -> exists(cells | 
+			thisModule.checkElementWithIdInList(el, cells.contains)= false))).debug() then newList.append(el.element) else newList endif)
+	);
+	
+	
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rule RowToFamilyRegister {
+	from
+		r: TABLE!Row (
+			r.name = 'FamilyRegister'
+		)
+	to
+		t: UFAMILIES!FamilyRegister (
+		)
+	do {
+		for(c in thisModule.filterList(r.rootElement())){
+			if(thisModule.checkCellsNot(c)){  
+				t.families <- thisModule.RowToFamilies(c);
+			}
+			else {
+					t.families <- thisModule.RowToUFamilies(c);
+				}
+		}
+	}
+}
+
+lazy rule RowToUFamilies {
+	from
+		r: TABLE!Row
+	to
+		t: UFAMILIES!uFamily (
+			name <- thisModule.parseString(thisModule.getAttributes(r.name)).first().name
+		)
+	do {
+		for(c in thisModule.parseString(thisModule.getAttributes(r.name))){
+			if(c.name <> r.name){
+				if(c.name.endsWith('father') = true){
+					if(thisModule.checkCells(c) = true){
+									
+					}else {
+						if(thisModule.checkID(c) = true){
+								thisModule.RowToFamilyMember(c);
+						}else {
+								thisModule.RowToUFamilyMember(c);
+						}
+					}
+				}
+			}
+		}
+		t; 
+	}
+}
+
+lazy rule RowToFamilies {
+	from
+		r: TABLE!Row
+	to
+		t: UFAMILIES!Family (
+			name <- thisModule.getAttributes(r.name).first().name
+		)
+	do {
+		for(c in thisModule.parseString(thisModule.getAttributes(r.name))){
+			if(c.name <> r.name){
+				if(c.name.endsWith('father') = true){
+					if(thisModule.checkCells(c) = false){
+						if(thisModule.checkID(c) = true){
+								t.father <- thisModule.RowToFamilyMember(c);
+						}
+						else {
+								t.father <- thisModule.RowToUFamilyMember(c);
+						}				
+					}
+				}
+				if(c.name.endsWith('mother') = true){
+					if(thisModule.checkCells(c) = false){
+						if(thisModule.checkID(c) = true){
+								t.mother <- thisModule.RowToFamilyMember(c);
+						}else {
+								t.mother <- thisModule.RowToUFamilyMember(c);
+						}
+										
+					}
+				}
+				
+				if(c.name.endsWith('sons') = true){
+					c.name;
+					if((thisModule.checkCells(c) = false) and (thisModule.
+							checkCellsNot(c) = true)){
+						
+						if(thisModule.checkListElements(c).debug()){
+							
+							t.sons <- thisModule.RowToFamilyMember(c);
+							
+						}
+						else {
+							
+							for(ce in (c.cells.first().contains -> select(el | c.cells ->
+									forAll(listE | thisModule.
+									checkElementWithIdInList(el, listE.contains))))){
+							
+									t.sons <- thisModule.CellToFamilyMember(ce.element);
+								
+							
+							}
+							
+						c.cells -> select(cell | cell.contains -> 
+								select(el | c.cells -> exists(cont |
+									thisModule.checkElementWithIdInList(el, cont.contains)))
+									);
+							
+								
+									
+								
+							
+						
+							
+						}
+						
+						
+					}
+					
+				}
+			}
+		}
+		t; 
+	}
+}
+
+lazy rule RowToFamilyMember {
+	from
+		r: TABLE!Row
+	to
+		t: UFAMILIES!FamilyMember (
+		)
+	do {
+		
+		if(r.name.endsWith('sons')){
+			
+			for(el in r.cells.first().contains){
+			
+				t.name <-thisModule.getObjectFromId(el.element.__xmiID__);
+				
+			}
+			
+		}
+		
+		t; 
+	}
+}
+
+lazy rule RowToUFamilyMember {
+	from
+		r: TABLE!Row
+	to
+		t: UFAMILIES!uFamilyMember (
+			name <- r.name
+		)
+	do {
+		
+		if(r.name.endsWith('sons')){
+			for(c in r.cells) {
+				for(el in c.contains){
+					t.uleft	<- thisModule.CellToFamilyMember(el.element);
+				}
+			}
+		}
+		t; 
+	}
+}
+
+lazy rule CellToFamilyMember {
+	from
+		c: TABLE!Element
+	to
+		t: UFAMILIES!FamilyMember (
+		)
+	do{
+			
+			t.name <- thisModule.getObjectFromId(c.__xmiID__);
+			
+			
+		}
+}
+
+lazy rule ElementToUFamilyMember {
+	from c: TABLE!Element
+	to	t: UFAMILIES!UFamilyMember()
+	do{
+			t.name <- thisModule.getObjectFromId(c.__xmiID__);
+			t;
+	}
+		
+
+}

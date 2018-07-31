@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+ <!-- Launch Configuration -->
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="mde.customrunconfigtable.CustomLaunchConfigurationDelegate"
+            id="mde.customrunconfigtable.launchConfigurationType"
+            modes="run"
+            name="JTL Table">
+      </launchConfigurationType>
+   </extension>
+   <!-- -->
+   
+   <!-- Declare launch shortcuts -->
+	<extension
+	    point="org.eclipse.debug.ui.launchShortcuts">
+	    <shortcut
+	        class="mde.customrunconfigtable.CustomLaunchShortcut"
+	        id="mde.customrunconfigtable.launchShortcut"
+	        label="Sample Shortcut"
+	        modes="run">
+	        	<perspective id="ord.eclipse.jdt.ui.JavaPerspective"/>
+	        	<perspective id="ord.eclipse.jdt.ui.JavaHierarchyPerspective"/>
+	        	<perspective id="ord.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+	    </shortcut>
+	</extension>
+	
+		<!-- Declare tab groups -->
+	
+	<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+    	<launchConfigurationTabGroup
+        	type="mde.customrunconfigtable.launchConfigurationType"
+        	class="mde.customrunconfigtable.CustomTabGroups"
+        	id="mde.customrunconfigtable.tabGroups">
+        	<launchMode
+        		mode="run"
+        		description="Launch Mode Test Run">
+        	</launchMode>
+    	</launchConfigurationTabGroup>
+	</extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Table -->
+      <package
+            uri="Table"
+            class="Table.TablePackage"
+            genModel="metamodels/Table.genmodel"/>
+   </extension>
+
+</plugin>
