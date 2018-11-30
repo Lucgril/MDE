@@ -1,4 +1,4 @@
-# MDE
+# Model Driven Engineering
 
 L’obiettivo del lavoro svolto è quello di creare un plug-in il cui scopo è quello di realizzare un modello che sia conforme ad un meta-modello generale di una tabella e che rappresenti le differenze tra due o più modelli. Tali differenze verranno successivamente utilizzate per creare un modello conforme al meta-modello delle incertezze.
 
