@@ -2,15 +2,13 @@
 <Families:FamilyRegister xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Families="platform:/plugin/Families/model/Families.ecore" xmlns:uncertainty="uncertainty">
   <families xsi:type="Families:Family" name="Family.Flanders.5">
     <father xsi:type="uncertainty:uFamilyMember" name="Family.Flanders.5.father">
-      <uleft name="FamilyMember.Bart.4"/>
-      <uleft name="FamilyMember.Marge.3"/>
+      <uleft name="FamilyMember.Todd.6"/>
     </father>
     <sons xsi:type="Families:FamilyMember" name="FamilyMember.Rod.7"/>
   </families>
   <families xsi:type="uncertainty:uFamily" name="Family.Flanders.8">
     <uleft xsi:type="uncertainty:uFamilyMember" name="Family.Flanders.8.father">
-      <uleft name="FamilyMember.Bart.4"/>
-      <uleft name="FamilyMember.Marge.3"/>
+      <uleft name="FamilyMember.Todd.6"/>
     </uleft>
     <uleft xsi:type="uncertainty:uFamilyMember" name="Family.Flanders.8.sons">
       <uleft name="FamilyMember.Todd.6"/>
@@ -27,7 +25,7 @@
       <uleft name="FamilyMember.Marge.3"/>
     </uleft>
     <uleft xsi:type="uncertainty:uFamilyMember" name="Family.Simpson.9.mother">
-      <uleft name="FamilyMember.Bart.4"/>
+      <uleft name="FamilyMember.Marge.3"/>
     </uleft>
   </families>
 </Families:FamilyRegister>

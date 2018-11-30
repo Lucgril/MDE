@@ -14,6 +14,9 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import java.util.*;
 
 public class Table {
@@ -53,6 +56,7 @@ public class Table {
 
 		for (final File fileEntry : this.inputFolderPath.listFiles()) {
 
+			print("file:" + this.inputFolderPath.toString() + "/" + fileEntry.getName());
 			Resource resource = resourceSet1.getResource(
 					URI.createURI("file:" + this.inputFolderPath.toString() + "/" + fileEntry.getName()), true);
 			
@@ -130,22 +134,6 @@ public class Table {
 	}
 
 	
-	private String getValue(String valueComposed) {
-		String value = "null";
-		
-		value = valueComposed.split(":")[1];
-		if (value.charAt(value.length() - 1) == ')') {
-			value = value.substring(1, value.length()-1);
-		}
-		else {
-			value = value.split(",")[0];
-		}
-		
-		return value;
-	}
-
-	
-	
 	private TreeMap<String, LinkedList<EObject>> createModelMap(TreeIterator<EObject> object1) {
 		
 		TreeMap<String, LinkedList<EObject>> result = new TreeMap<String, LinkedList<EObject>>();
@@ -188,7 +176,6 @@ public class Table {
 				
 				LinkedList<EObject> val = new LinkedList<EObject>();
 				
-		
 				if(curr.eGet(esf) instanceof EList){
 					
 					for(EObject x: (EList<EObject>)curr.eGet(esf)){
@@ -207,9 +194,10 @@ public class Table {
 						val.add(null);
 					}
 					else {
-						val.add(esf);
+						if(esf.getName().equals("father") || esf.getName().equals("mother")) {
+							val.add(retrieveEObject(getName(curr.eGet(esf).toString()), esf));
+						}
 					}
-
 					result.put(name + "." + esf.getName(), val);
 				}
 			}	
@@ -219,13 +207,20 @@ public class Table {
 	
 	
 	private String composeName(EObject curr){
-		
 		String result = "";
+		String name = "";
+		List<EStructuralFeature> listAttribute = curr.eClass().getEStructuralFeatures();
 		
-		result = curr.eClass().getName() + "." + getValue(curr.toString()) + "." + retrieveID(curr);
+		for(EStructuralFeature esf: listAttribute) {
+			if(curr.eGet(esf) instanceof String) {
+				name = (String) curr.eGet(esf);
+			}	
+		}
 		
+		//result = curr.eClass().getName() + "." + getValue(curr.toString()) + "." + retrieveID(curr);
+		result = curr.eClass().getName() + "." + name + "." + retrieveID(curr);
+	
 		return result;
-		
 	}
 
 	
@@ -252,8 +247,38 @@ public class Table {
 		
 		return String.valueOf(rand.nextInt(100));
 	}
+	
+	public EObject retrieveEObject(String object, EStructuralFeature feature) {
+		
+		TreeIterator <EObject> leftIterator = leftRes.getAllContents();
+		
+		EObject temp = null;
+				
+		while(leftIterator.hasNext()) {
+			temp = leftIterator.next();
+			print("temp: " + temp);
+			if(getName(temp.toString()) != "" && getName(temp.toString()).equals(object)) {
+				return temp;
+			}
+		}
+		temp = null;
+		return temp;
+	}
 
 	
+	public String getName(String match){
+		Pattern pattern = Pattern.compile("[(]name(.*)");
+		Matcher matcher = pattern.matcher(match);
+		String result = "";
+		
+		if(matcher.find()){
+			result = matcher.group(1);
+			result = result.substring(2, result.length() - 1);
+		}
+		
+		return result;
+	}
+
 	private void print(Object e) {
 		if (e instanceof TreeMap) {
 			for (Object x : ((TreeMap) e).keySet()) {
@@ -263,18 +288,15 @@ public class Table {
 		} else {
 			System.out.println(e);
 		}
-
 	}
 	
 	
 	private void addToModelNameList(String name){
-		
 		this.modelNames.add(name);	
 	}
 	
 	
 	public LinkedList<String> getModelNameList(){
-		
 		return this.modelNames;	
 	}
 	

@@ -17,7 +17,7 @@ helper def: parseCellElement(a: Sequence(TABLE!Element)): Boolean =
 	a -> forAll(e | e.Element <> OclUndefined);
 
 -- Restituisce tutti gli elementi tranne i rispettivi attributi o referenze
--- Es. Es. Dato in inpu Family.Flanders.5, restituisce Family.Flanders.5 e non
+-- Es. Es. Dato in input Family.Flanders.5, restituisce Family.Flanders.5 e non
 -- Family.Flanders.5.*
 helper context TABLE!Row def: rootElement(): Sequence(TABLE!Row) =
 	TABLE!Row.allInstances() -> select(i | i.name.substring(i.getPosition() + 1, i.
@@ -27,7 +27,7 @@ helper context TABLE!Row def: rootElement(): Sequence(TABLE!Row) =
 helper context TABLE!Row def: getPosition(): String =
 	self.name.indexOf(self.name.split('\\.').last());
 
--- Restituisce tutti gli elementi del modello tranne quelli di tipo 'FamilyMemebr'
+-- Restituisce tutti gli elementi del modello tranne quelli di tipo 'FamilyMember' (che contengono Family nel nome);
 helper def: filterList(list: Sequence(TABLE!Row)): Sequence(TABLE!Row) =
 	list -> iterate(x; newList: Sequence(TABLE!Row) = Sequence{} | if (x.name.split('\\.'
 			+ '.').first() = 'Family') then
@@ -41,6 +41,7 @@ helper def: filterList(list: Sequence(TABLE!Row)): Sequence(TABLE!Row) =
 -- Es. Dato in inpu Family.Flanders.5, restituisce Family.Flanders.5.*
 helper def: getAttributes(name: String): Sequence(TABLE!Row) =
 	TABLE!Row.allInstances() -> select(r | r.name.startsWith(name));
+
 
 -- Esclude dalla selezione qualsiasi oggetto il cui nome finisce con '.familiesInverse' o
 -- '.name'
@@ -56,7 +57,7 @@ helper def: checkSize(r: TABLE!Row): Boolean =
 		false
 	endif;
 
--- Verifica se gli elementi delle 'Cell' di una 'Row' hanno lo stesso _xmiID_
+-- Verifica se gli elementi delle 'Cell' di una 'Row' hanno lo stesso xmiID
 helper def: checkID(c: TABLE!Row): Boolean =
 	let id: String =
 		c.cells -> iterate(e; result: String = '' | result = (e.contains -> select(els |
@@ -73,11 +74,11 @@ helper def: checkID(c: TABLE!Row): Boolean =
 			endif;
 
 helper def: checkCells(r: TABLE!Row): Boolean =
-	r.cells -> forAll(cell | cell.contains.first().element.oclIsUndefined());
+	r.cells -> forAll(cell | cell.contains.first().element.oclIsUndefined());  --True se tutte le celle sono vuote, false se almeno una non � vuota
 
 helper def: checkCellsNot(r: TABLE!Row): Boolean =
-	r.cells -> forAll(cell | not cell.contains.first().element.oclIsUndefined());
-
+	r.cells -> forAll(cell | not cell.contains.first().element.oclIsUndefined()); --True se tutte le celle non sono vuote, false se almeno una � vuota
+	
 helper def: checkListElements(r: TABLE!Row): Boolean =
 	let lTmp: Sequence(TABLE!Element) =
 		thisModule.returnFirstListNotNull(r.cells)
@@ -92,16 +93,22 @@ helper def: checkListElementNull(e: Sequence(TABLE!Element)): Boolean =
 
 helper def: checkListsEquals(l1: Sequence(TABLE!Element), l2: Sequence(TABLE!Element)):
 		Boolean =
-	l1 -> forAll(el1 | thisModule.checkElementWithIdInList(el1, l2)) and l2 -> forAll(el2
-			| thisModule.checkElementWithIdInList(el2, l1));
+			l1 -> forAll(el1 | thisModule.checkElementWithIdInList(el1, l2));
+	--l1 -> forAll(el1 | thisModule.checkElementWithIdInList(el1, l2)) and l2 -> forAll(el2
+	--		| thisModule.checkElementWithIdInList(el2, l1));
 
+	--(davide, cristian, luca) -> (davide, cristian) ecc.
+	
 helper def: checkElementWithIdInList(el: TABLE!Element, l2: Sequence(TABLE!Element)):
 		Boolean =
-	l2 -> exists(el2 | el.element.__xmiID__ = el2.element.__xmiID__);
+	l2 -> exists(el2 | el.__xmiID__ = el2.element.__xmiID__);
 
 helper def: getObjectFromId(id: String): String =
 	TABLE!Row.allInstances() -> select(r | r.name.endsWith(thisModule.
 			getNumberFromId(id))).first().name;
+	
+helper def: getFatherFromId(id: String): String =
+	TABLE!Row.allInstances() -> select(r | r.name.endsWith(id)).first().name;
 
 helper def: getNumberFromId(id: String): String =
 	id.split('_').at(2);
@@ -112,10 +119,33 @@ helper def: getUncertMembers(c: Sequence(TABLE!Cell)): Sequence(TABLE!Element) =
 		 (c -> exists(cells | 
 			thisModule.checkElementWithIdInList(el, cells.contains)= false))).debug() then newList.append(el.element) else newList endif)
 	);
-	
-	
 
+helper def: getCertMembers(c: Sequence(TABLE!Cell)): Sequence(TABLE!Element) = 
+	
+	--thisModule.returnFirstListNotNull(c).first().element.__xmiID__.debug();
+	thisModule.returnFirstListNotNull(c).debug() -> select(el | 
+		c -> forAll(cells | thisModule.checkElementWithIdInList(el.element, cells.contains) = true));
+	
+helper def: getAllElements(c: Sequence(TABLE!Cell)): Sequence(TABLE!Element) = 
+	c -> iterate(cell; lTmp: Sequence(TABLE!Element) = Sequence{} | cell.contains -> iterate(el; x:Boolean = false | 
+		if (el.element <> OclUndefined) then 
+			if((thisModule.checkElementWithIdInList(el.element, lTmp) = false)) then lTmp.append(el) else lTmp endif
+			else lTmp endif));
+	
+--helper def: createExclude(e: TABLE!Element): Sequence(String) =
+	--thisModule.getNamesFromExclude(
+		--thisModule.getNotUndefinedElement() -> select(el | el.__xmiID__ = e.__xmiID__ and (el <> e.element)));
+	
+helper def: createExclude(e: TABLE!Element): Sequence(TABLE!Element) =
+	thisModule.getNotUndefinedElement() -> select(el | el.__xmiID__ = e.__xmiID__ and (el <> e.element));
+		
+helper def: getNotUndefinedElement(): Sequence(TABLE!EObject) =
+	TABLE!Element.allInstances() -> select(el | el.element <> OclUndefined);
+
+helper def: getNamesFromExclude(s: Sequence(TABLE!Element)): Sequence(String) =
+	s -> iterate(x; lTmp: Sequence(String) = Sequence{} | lTmp.append(x.name.debug()));
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 rule RowToFamilyRegister {
 	from
 		r: TABLE!Row (
@@ -130,8 +160,8 @@ rule RowToFamilyRegister {
 				t.families <- thisModule.RowToFamilies(c);
 			}
 			else {
-					t.families <- thisModule.RowToUFamilies(c);
-				}
+				t.families <- thisModule.RowToUFamilies(c);
+			}
 		}
 	}
 }
@@ -146,15 +176,13 @@ lazy rule RowToUFamilies {
 	do {
 		for(c in thisModule.parseString(thisModule.getAttributes(r.name))){
 			if(c.name <> r.name){
-				if(c.name.endsWith('father') = true){
-					if(thisModule.checkCells(c) = true){
-									
-					}else {
-						if(thisModule.checkID(c) = true){
-								thisModule.RowToFamilyMember(c);
-						}else {
-								thisModule.RowToUFamilyMember(c);
-						}
+				if(thisModule.checkCells(c) = true){}
+				else {
+					if(thisModule.checkID(c) = true){
+						thisModule.RowToFamilyMember(c);
+					} 
+					else {
+						t.uleft <- thisModule.RowToUFamilyMember(c);
 					}
 				}
 			}
@@ -187,56 +215,31 @@ lazy rule RowToFamilies {
 					if(thisModule.checkCells(c) = false){
 						if(thisModule.checkID(c) = true){
 								t.mother <- thisModule.RowToFamilyMember(c);
-						}else {
-								t.mother <- thisModule.RowToUFamilyMember(c);
 						}
-										
+						else {
+								t.mother <- thisModule.RowToUFamilyMember(c);
+						}						
 					}
 				}
 				
-				if(c.name.endsWith('sons') = true){
-					c.name;
-					if((thisModule.checkCells(c) = false) and (thisModule.
-							checkCellsNot(c) = true)){
-						
-						if(thisModule.checkListElements(c).debug()){
-							
+				if(c.name.endsWith('sons') = true) {
+					if (thisModule.checkCells(c) = false and thisModule.checkCellsNot(c) = true) { --Controllo se tutte le celle sono vuote o meno. Falsa quando almeno una cella � non vuota
+						for(el in thisModule.getCertMembers(c.cells)) {
 							t.sons <- thisModule.RowToFamilyMember(c);
-							
-						}
-						else {
-							
-							for(ce in (c.cells.first().contains -> select(el | c.cells ->
-									forAll(listE | thisModule.
-									checkElementWithIdInList(el, listE.contains))))){
-							
-									t.sons <- thisModule.CellToFamilyMember(ce.element);
-								
-							
-							}
-							
-						c.cells -> select(cell | cell.contains -> 
-								select(el | c.cells -> exists(cont |
-									thisModule.checkElementWithIdInList(el, cont.contains)))
-									);
-							
-								
-									
-								
-							
-						
-							
-						}
-						
-						
+						}						
 					}
-					
+					else {
+						for(ce in (c.cells.first() -> select(el | c.cells ->
+							forAll(listE | thisModule.checkElementWithIdInList(el.debug(), listE.contains)).debug()))){
+								t.sons <- thisModule.CellToFamilyMember(ce.element);
+							}
+						}						
+					}
 				}
 			}
-		}
-		t; 
+			t;
+		} 
 	}
-}
 
 lazy rule RowToFamilyMember {
 	from
@@ -245,17 +248,11 @@ lazy rule RowToFamilyMember {
 		t: UFAMILIES!FamilyMember (
 		)
 	do {
-		
-		if(r.name.endsWith('sons')){
-			
-			for(el in r.cells.first().contains){
-			
+		if(r.name.endsWith('sons')) {
+			for(el in r.cells.first().contains){	
 				t.name <-thisModule.getObjectFromId(el.element.__xmiID__);
-				
 			}
-			
 		}
-		
 		t; 
 	}
 }
@@ -268,13 +265,8 @@ lazy rule RowToUFamilyMember {
 			name <- r.name
 		)
 	do {
-		
-		if(r.name.endsWith('sons')){
-			for(c in r.cells) {
-				for(el in c.contains){
-					t.uleft	<- thisModule.CellToFamilyMember(el.element);
-				}
-			}
+		for(el in thisModule.getAllElements(r.cells)){
+			t.uleft <- thisModule.CellToFamilyMember(el);
 		}
 		t; 
 	}
@@ -284,23 +276,36 @@ lazy rule CellToFamilyMember {
 	from
 		c: TABLE!Element
 	to
-		t: UFAMILIES!FamilyMember (
-		)
-	do{
-			
-			t.name <- thisModule.getObjectFromId(c.__xmiID__);
-			
-			
+		t: UFAMILIES!FamilyMember ()
+	do {
+			if(c <> OclUndefined) { --Perchè potrebbe accedere a xmiID di elementi undefined.
+				t.name <- thisModule.getObjectFromId(c.element.__xmiID__);
+				--t.exclude <- thisModule.createExclude(c);
+			}
+			t;
+		}
+}
+
+lazy rule FatherToFamilyMember {
+	from
+		c: TABLE!Element
+	to
+		t: UFAMILIES!FamilyMember ()
+	do {
+			if(c.debug() <> OclUndefined) { --Perchè potrebbe accedere a xmiID di elementi undefined.
+				t.name <- thisModule.getFatherFromId(c.element.debug());
+			}
+			t;
 		}
 }
 
 lazy rule ElementToUFamilyMember {
-	from c: TABLE!Element
-	to	t: UFAMILIES!UFamilyMember()
-	do{
+	from 
+		c: TABLE!Element
+	to	
+		t: UFAMILIES!UFamilyMember()
+	do {
 			t.name <- thisModule.getObjectFromId(c.__xmiID__);
 			t;
-	}
-		
-
+		}
 }
